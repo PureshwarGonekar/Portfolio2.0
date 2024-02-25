@@ -21,6 +21,9 @@ import tailwindIcon from "../../assets/tailwind.svg";
 import vscodeIcon from "../../assets/vscode-icon.svg";
 import boostrapIcon from "../../assets/bootstrap-icon.svg";
 import Skills from "../Skills/Skills";
+import Education from "../Education/Education"
+import Experience from "../Experience/Experience";
+import CodingProfiles from "../CodingProfile/CodingProfiles";
 
 
 export function Main() {
@@ -250,8 +253,11 @@ export function Main() {
       />
       <Hero></Hero>
       <About></About>
+      <Education></Education>
       <Skills></Skills>
+      <Experience></Experience>
       <Project></Project>
+      <CodingProfiles></CodingProfiles>
       <Contact></Contact>
     </Container>
   );

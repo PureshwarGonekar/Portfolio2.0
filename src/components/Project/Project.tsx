@@ -17,7 +17,7 @@ export function Project() {
   return (
 
     <Container id="project">
-      <h2 className=" text-red-400">My Projects</h2>
+      <h2 className="font-bold" style={{color: '#23ce6b'}}>Projects</h2>
       <div className="projects">
 
 
@@ -63,13 +63,6 @@ export function Project() {
           tech={'React Js, Typescript, Tailwind CSS, Aceternity UI '}
           image={protfolio2}
           link={'#'}
-        />
-
-        <ThreeDCardDemo 
-          title={'Portfolio 1.0  - My personal portfolio website'} 
-          tech={'HTML, CSS, JavaScript, Bootstrap'}
-          image={protfolio1}
-          link={'https://pureshwargonekar.github.io/My-Resume/'}
         />
 
         <ThreeDCardDemo 

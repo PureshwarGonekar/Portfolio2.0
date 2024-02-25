@@ -6,6 +6,8 @@ import { NavHashLink } from "react-router-hash-link"
 import linkedin from '../../assets/linkedin.svg'
 import githubIcon from '../../assets/github.svg'
 import whatsapp from '../../assets/whatsapp.svg'
+import instagramIcon from '../../assets/instagram.svg'
+import mail from '../../assets/mail.png'
 import Hello from '../../assets/Hello.gif'
 import telegram from '../../assets/telegram.svg'
 export function Hero() {
@@ -13,13 +15,13 @@ export function Hero() {
     <Container id="home">
       <div className="hero-text">
         <ScrollAnimation animateIn="fadeInUp">
-          <p>Hello <img src={Hello} alt="Hello" width="20px"/>, I'm</p>
+          <p className="flex text-4xl"> Hello &nbsp; <img src={Hello} alt="Hello" width="20px"/> &nbsp;, I'm</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.2 * 1000}>
           <h1>Pureshwar Gonekar</h1>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.4 * 1000}>
-          <h3>Full Stack Developer</h3>
+          <h3 className="text-5xl">Full Stack Developer</h3>
         </ScrollAnimation>
 
         <br />
@@ -31,34 +33,49 @@ export function Hero() {
         </ScrollAnimation>
         
         <ScrollAnimation animateIn="fadeInUp" delay={1 * 1000}>
-      <div className="social-media"><a
-        href="https://www.linkedin.com/in/pureshwar-gonekar-358b661aa/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <img src={linkedin} alt="Linkedin" />
-      </a>
-        <a
-          href="https://github.com/PureshwarGonekar"
+        <div className="social-media"><a
+          href="https://www.linkedin.com/in/pureshwar-gonekar-358b661aa/"
           target="_blank"
           rel="noreferrer"
         >
-          <img src={githubIcon} alt="GitHub" />
-        </a>
-        <a
-          href="https://api.whatsapp.com/send/?phone=%2B919630576848&text=Hello+Vinayak"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={whatsapp} alt="Whatsapp" />
-        </a>
-        <a
-          href="https://t.me/CodeVinayak"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={telegram} alt="telegram" />
-        </a></div>
+          <img src={linkedin} alt="Linkedin" />
+          </a>
+            <a
+              href="https://github.com/PureshwarGonekar"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={githubIcon} alt="GitHub" />
+            </a>
+            <a
+              href="mailto:pureshwargonekar7@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={mail} alt="telegram" />
+            </a>
+            <a
+              href="https://api.whatsapp.com/send/?phone=%2B919770809324&text=Hello+Pureshwar"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={whatsapp} alt="Whatsapp" />
+            </a>
+            <a
+              href="mailto:pureshwargonekar7@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={telegram} alt="telegram" />
+            </a>
+            <a
+              href="https://www.instagram.com/pureshwar_gonekar/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={instagramIcon} alt="telegram" />
+            </a>
+        </div>
         </ScrollAnimation>
 
       </div>

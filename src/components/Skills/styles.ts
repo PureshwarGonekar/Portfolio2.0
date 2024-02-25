@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 
 export const Container = styled.section`
-    .skills {
+    margin-top: 4rem;
+.skills {
     display: flex;
     flex-direction: column;
     align-items: center;

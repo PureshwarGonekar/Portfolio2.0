@@ -4,6 +4,7 @@ import { toast, ToastContainer } from 'react-toastify'
 import ReCAPTCHA from 'react-google-recaptcha'
 import { useEffect, useState } from 'react'
 import validator from 'validator'
+import { log } from 'console'
 
 export function Form() {
   const [state, handleSubmit] = useForm('xknkpqry')
@@ -46,11 +47,17 @@ export function Form() {
       </ContainerSucces>
     )
   }
+  
+  const handleSubmitForm = (e:any)=>{
+    e.preventDefault();
+    // const {name, value} = e.target;
+    console.log("e.target",e.target)
+  }
 
   return (
     <Container>
       <h2>Get in touch using the form</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmitForm}>
         <input
           placeholder="Email"
           id="email"
@@ -76,15 +83,10 @@ export function Form() {
           field="message"
           errors={state.errors}
         />
-        <ReCAPTCHA
-          sitekey="6Lfj9NYfAAAAAP8wPLtzrsSZeACIcGgwuEIRvbSg"
-          onChange={(e) => {
-            setIsHuman(true)
-          }}
-        ></ReCAPTCHA>
         <button
           type="submit"
-          disabled={state.submitting || !validEmail || !message || !isHuman}
+          className={`border border-r-4 ${message? 'bg-green-700' :'bg-green-300' } ${message? 'hover:bg-green-800' :'hover:bg-green-400' }`}
+          disabled={state.submitting || !validEmail || !message }
         >
 
           Submit

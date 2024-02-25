@@ -6,6 +6,7 @@ import githubIcon from '../../assets/github.svg'
 import whatsapp from '../../assets/whatsapp.svg'
 import telegram from '../../assets/telegram.svg'
 import instagramIcon from '../../assets/instagram.svg'
+import mail from '../../assets/mail.png'
 // import discordIcon from '../../assets/discord.png'
 
 export function Footer() {
@@ -13,7 +14,8 @@ export function Footer() {
     <Container className="footer">
       <div>
         <p>
-          This Website was made with <img src={reactIcon} alt="React" />
+          Made with ❤️ by <span>Pureshwar Gonekar</span>
+          using<img src={reactIcon} alt="React" />
           {/* <span>❤️</span> */}
         </p>
       </div>
@@ -33,18 +35,32 @@ export function Footer() {
             <img src={githubIcon} alt="GitHub" />
           </a>
           <a
-            href="https://api.whatsapp.com/send/?phone=%2B919630576848&text=Hello+Vinayak"
+            href="mailto:pureshwargonekar7@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={mail} alt="telegram" />
+          </a>
+          <a
+            href="https://api.whatsapp.com/send/?phone=%2B919770809324&text=Hello+Pureshwar"
             target="_blank"
             rel="noreferrer"
           >
             <img src={whatsapp} alt="Whatsapp" />
           </a>
           <a
-            href="https://t.me/CodeVinayak"
+            href="mailto:pureshwargonekar7@gmail.com"
             target="_blank"
             rel="noreferrer"
           >
             <img src={telegram} alt="telegram" />
+          </a>
+          <a
+            href="https://www.instagram.com/pureshwar_gonekar/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={instagramIcon} alt="telegram" />
           </a>
       </div>
     </Container>
