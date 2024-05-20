@@ -27,7 +27,7 @@ const Education = ()=>{
           <h1 className="vertical-timeline-element-title font-semibold text-4xl text-green-600">Jabalpur Engineering College, Jabalpur</h1>
           <h3 className="vertical-timeline-element-subtitle text-red-500 text-3xl mt-1" >B. Tech - Computer Science</h3>
           <h3 className="text-[15px] text-sky-900 mt-1 mb-3">2020 - 2024</h3>
-          <h3 className="text-[15px]">CGPA - 7.94/10</h3>
+          <h3 className="text-[15px]">CGPA - 8.22/10</h3>
 
         </VerticalTimelineElement>
 

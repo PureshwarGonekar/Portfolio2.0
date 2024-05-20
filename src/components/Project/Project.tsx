@@ -9,6 +9,8 @@ import SLD from '../../assets/project/SLD.png'
 import protfolio1 from '../../assets/project/protfolio1.png'
 import protfolio2 from '../../assets/project/protfolio2.png'
 import userManager from '../../assets/project/userManager.png'
+import compareCraze from '../../assets/project/compareCraze.png'
+import rentify from '../../assets/project/rentify.png'
 export function Project() {
   return (
 
@@ -23,6 +25,22 @@ export function Project() {
           image={pchess}
 
           link={'https://pchess-pureshwar.vercel.app/'}
+        />
+
+        <ThreeDCardDemo 
+          title={'Rentify -  Web application designed to connect property seekers with seller'} 
+          tech={'React.js, Node.js, Express.js, Tailwind CSS, MongoDB, Nodemailer, Multer'}
+          image={rentify}
+
+          link={'https://rentify-two.vercel.app/'}
+        />
+
+        <ThreeDCardDemo 
+          title={'Compare Craze - A platform for comparing specifications of various electronic gadgets'} 
+          tech={'React.js, Node.js, Express.js, Tailwind CSS, MongoDB, Multer'}
+          image={compareCraze}
+
+          link={'https://compare-craze.vercel.app/'}
         />
 
         <ThreeDCardDemo 
